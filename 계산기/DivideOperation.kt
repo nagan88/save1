@@ -2,7 +2,7 @@ package com.example.calculater_application_v2
 
 import kotlin.jvm.Throws
 
-class DivideOperation : AbstractOperation({
+class DivideOperation : AbstractOperation(){
 
     override fun operate(num1: Int, num2: Int): Double{
         require(num2!=0){//require:예외처리 함수
