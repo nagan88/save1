@@ -1,6 +1,31 @@
 package com.example.practice
 
 fun main(){
+    var ShackBurger=Food("ShackBurger", 6.9, "burger", "토마토,양상추,쉑소스가 토핑된 치즈버거")
+    var SmokeBurger = Food("SmokeBurger", 8.9, "burger", "체리 페퍼에 쉑소스가 토핑된 치즈버거")
+    var ShroomBurger=Food("Shroom Burger", 9.4, "burger", "몬스터 치즈와 체다 치즈로 속을 채운 베지테리안 버거")
+    var Cheeseburger=Food("Cheeseburger", 9.4, "burger", "포테이토 번과 비프패티, 치즈가 토핑된 치즈버거")
+    var Hamburger=Food("Hamburger", 9.4, "burger", "비프패티를 기반으로 야채가 들어간 기본버거")
+
+    var PlainIceCream=Food("Plain Ice Cream", 12.1, "Forzen Custard", "바닐라 아이스크림")
+    var ChocolateIceCream = Food("Chocolate Ice Cream", 10.2, "Forzen Custard", "바닐라 아이스크림")
+    var FruitsIceCream =Food("Fruits Ice Cream", 15.14, "Forzen Custard", "과일 아이스크림")
+    var NutsIceCream =Food("Nuts 1Ice Cream", 15.14, "Forzen Custard", "아몬드 아이스크림")
+    var IceMilk =Food("Ice Milk ", 9.9, "Forzen Custard", "저지방 아이스크림")
+
+    var Ade=Food("Ade", 7.5, "Drinks", "에이드")
+    var Americano  = Food("Americano", 6.4, "Drinks", "아메리카노")
+    var Beverage =Food("Beverage", 6.8, "Drinks", "음료수")
+    var BlackTea =Food("Black Tea", 7.7, "Drinks", "홍차")
+    var BarleyTea =Food("Barley Tea ", 8.9, "Drinks", "보리차")
+
+    var Bokbunja =Food("Bokbunja", 16.2, "Beer", "복분자")
+    var Bourbon  = Food("Bourbon", 19.2, "Beer", "버번위스키")
+    var Cocktail =Food("Cocktail", 15.4, "Beer", "캌테일")
+    var Gin =Food("Gin", 25.2, "Beer", "진")
+    var ArmandDeBrignac =Food("Armand de Brignac", 999.99, "Beer", "아르망디 샴페인")
+
+
     while(true){
         println("아래 메뉴판을 보시고 메뉴를 골라 입력해주세요")
         println("SHAKESHACK MENU")
@@ -22,23 +47,24 @@ fun main(){
                 var Menupick = readLine()!!.toInt()
                 when(Menupick){
                     0->{
-
                     }
                     1->{
-                        println("ShackBurger 입니다~\n")
+                        ShackBurger.displayinfo()
                     }
                     2->{
-                        println("SmokeShack 입니다~\n")
+                        SmokeBurger.displayinfo()
                     }
                     3->{
-                        println("Shroom Burger 입니다~\n")
+                        ShroomBurger.displayinfo()
                     }
                     4->{
-                        println("Cheeseburger 입니다~\n")
+                        Cheeseburger.displayinfo()
                     }
                     5->{
-                        println("Hamburger 입니다~\n")
+                        Hamburger.displayinfo()
+
                     }
+
                 }
             }
             2->{
@@ -55,19 +81,19 @@ fun main(){
 
                     }
                     1->{
-                        println("Plain Ice Cream 입니다~\n")
+                        PlainIceCream.displayinfo()
                     }
                     2->{
-                        println("Chocolate Ice Cream 입니다~\n")
+                        ChocolateIceCream.displayinfo()
                     }
                     3->{
-                        println("Fruits Ice Cream 입니다~\n")
+                        FruitsIceCream.displayinfo()
                     }
                     4->{
-                        println("Nuts Ice Creamr 입니다~\n")
+                        NutsIceCream.displayinfo()
                     }
                     5->{
-                        println("Ice Milk 입니다~\n")
+                        IceMilk.displayinfo()
                     }
 
                 }
@@ -87,19 +113,19 @@ fun main(){
 
                     }
                     1->{
-                        println("Ade 입니다~\n")
+                        Ade.displayinfo()
                     }
                     2->{
-                        println("Americano 입니다~\n")
+                        Americano.displayinfo()
                     }
                     3->{
-                        println("Beverage 입니다~\n")
+                        Beverage.displayinfo()
                     }
                     4->{
-                        println("Black Tea 입니다~\n")
+                        BlackTea.displayinfo()
                     }
                     5->{
-                        println("Barley Tea 입니다~\n")
+                        BarleyTea.displayinfo()
                     }
                 }
             }
@@ -117,19 +143,19 @@ fun main(){
 
                     }
                     1->{
-                        println("Bokbunja  입니다~\n")
+                        Bokbunja.displayinfo()
                     }
                     2->{
-                        println("Bourbon 입니다~\n")
+                        Bourbon.displayinfo()
                     }
                     3->{
-                        println("Cocktail 입니다~\n")
+                        Cocktail.displayinfo()
                     }
                     4->{
-                        println("Gin 입니다~\n")
+                        Gin.displayinfo()
                     }
                     5->{
-                        println("Armand de Brignac 입니다~\n")
+                        ArmandDeBrignac.displayinfo()
                     }
 
                 }
