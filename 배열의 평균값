@@ -1,0 +1,9 @@
+class Solution {
+    fun solution(numbers: IntArray): Double {
+        var Double = 0.0
+        for(i in numbers){
+            Double +=i
+        }
+        return Double / (numbers.size)
+    }
+}
