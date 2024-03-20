@@ -1,6 +1,6 @@
 package com.example.practice
 
-class AccessTestClass {
+open class AccessTestClass {
     public var a:Int = 1 //접근제한자 public는 있으나 하는 키워드 public이 있는 없는 변수 a는 밑의 접근제한자가 없는 변수 b와 같은 권한을 보유
     var b = 2
     private var c = 3 //변수 c는 객체를 만들고 객체이름.c하고는 사용이 불가, 같은 클래스에서 사용이가능
