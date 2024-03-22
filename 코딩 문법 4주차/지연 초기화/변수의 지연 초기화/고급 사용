@@ -1,0 +1,32 @@
+package com.example.practice
+
+fun main(){
+    var s1 = Student()
+    s1.name = "참새"
+    s1.displayInfo()
+
+    s1.age = 10
+    s1.displayInfo()
+}
+
+class Student {
+    lateinit var name:String
+    var age:Int = 0
+
+    fun displayInfo() {
+        if(this::name.isInitialized) { //'name'이 사용하기전 정말로 초기화 되어는지 확인하기 위해 'name.isInitialized'를 호출
+            //name같은 경우 클래스 내부에 '::'으로 접근
+            //'.isInitialized'를 사용할 때는 'this::'으로 접근하여 사용
+            println("이름은: ${name} 입니다.")
+            println("나이는: ${age} 입니다.")
+            //값이 ture이면 'printlin' 실행 가능
+            
+        } else {
+            println("name변수를 초기화해주세요.")
+            //값이 false이면 'printlin' 실행 불가
+        }
+        //초기화가 안되는데 'printlin'를 사용하면 예외가 발생
+        //예외가 발생하면 예외 처리를 위한 트라이캐치를 묶이게 되고 트라이캐치를 묶으면 코드가 길어지고 코드가 길어지면 성능이 저하
+        //하지만 '.isInitialized'를 사용하여 조건을 검색하면 간결하게 코드 작성이 가능
+    }
+}
